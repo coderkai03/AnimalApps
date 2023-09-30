@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/catlogo"
+        android:layout_width="164dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toTopOf="@id/dailygoal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="365dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/xpbar"
+        app:layout_constraintBottom_toTopOf="@id/dailygoal"
+        app:layout_constraintTop_toBottomOf="@id/catlogo"
+        app:layout_constraintStart_toStartOf="@id/catlogo"
+        app:layout_constraintEnd_toEndOf="@id/catlogo" />
+
+    <TextView
+        android:id="@+id/dailygoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="You've made your cats happy!"
+        app:layout_constraintBottom_toTopOf="@id/pet"
+        app:layout_constraintTop_toBottomOf="@id/progressbar"
+        app:layout_constraintStart_toStartOf="@id/progressbar"
+        app:layout_constraintEnd_toEndOf="@id/progressbar" />
+
+    <TextView
+        android:id="@+id/pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Cats petted!"
+        app:layout_constraintBottom_toTopOf="@id/purr"
+        app:layout_constraintTop_toBottomOf="@id/dailygoal"
+        app:layout_constraintStart_toStartOf="@id/dailygoal"
+        app:layout_constraintEnd_toEndOf="@id/dailygoal" />
+
+    <TextView
+        android:id="@+id/purr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purr bonus!"
+        app:layout_constraintBottom_toTopOf="@id/meow"
+        app:layout_constraintTop_toBottomOf="@id/pet"
+        app:layout_constraintStart_toStartOf="@id/pet"
+        app:layout_constraintEnd_toEndOf="@id/pet" />
+
+    <Button
+        android:id="@+id/meow"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="MEOW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/purr"
+        app:layout_constraintStart_toStartOf="@id/purr"
+        app:layout_constraintEnd_toEndOf="@id/purr" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,7 +34,7 @@ The following STRETCH features are implemented:
 
 I have chosen to duplicate the following layout from the **Duolingo** app:
 
-<img src='https://cdn.designvault.io/media/20221221164246/742ae968.jpg' title='Duolingo' width='50%' alt='completion screen' />
+<img src='https://cdn.designvault.io/media/20221221164246/742ae968.jpg' title='Duolingo' width='100px' alt='completion screen' />
 
 ## Video Demo
 
